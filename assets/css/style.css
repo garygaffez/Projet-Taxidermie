@@ -4,9 +4,12 @@ body {
 }
 
 h1 {
-    font-family: 'Londrina Solid';
+    font-family: 'Londrina Solid', sans-serif;
     font-style: oblique;
 }
+
+/* header */
+
 #header {
     position: relative;
 }
@@ -43,10 +46,11 @@ h1 {
 #presentation {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .titlePresentation {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', sans-serif;
     background-color:#94C5CC;
     border-radius: 10px;
     border:solid 1px dimgrey;
@@ -70,7 +74,7 @@ h1 {
 .history {
     width: 70%;
     height: auto;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', sans-serif;
     font-size: 20px;
     font-weight: bold;
     background-color: rgb(255, 255, 255);
@@ -86,6 +90,7 @@ h1 {
     margin: 0;
 }
 
+/* menu */
 
 nav {
     width: 100%;
@@ -141,10 +146,13 @@ nav ul li a:hover {
     color: grey;
 }
 
+/* Réalisations */
+
 #realisations {
     width: 60%;
     margin: auto;
-    margin-top: 60px;   
+    margin-top: 50px; 
+    margin-bottom: 100px;  
 }
 
 #realisations h1 {
@@ -156,35 +164,35 @@ nav ul li a:hover {
     width: 100%;
 }
 
-img{
+img {
     max-width: 100%;
     border: 1px solid black;
     border-radius: 10px;
 }
 
 /*pour le saut de page, on cree une class que l'on met en display:none*/
-.target{
+.target {
     display: none;
 }
 
 /* englobe le slider */
-.cadre_diapo{
+.cadre_diapo {
     margin: auto;
     max-width: 85%;
     overflow: hidden;	
 }
 
-.interieur_diapo{
+.interieur_diapo {
     display: flex;
     width: 400%;
     transition: transform .6s ease-in-out;  	
 }
 
-.description{
+.description {
     position: relative;
 }
 
-.description span{
+.description span {
     position: absolute;
     top: 85%;
     font-size: 75%;
@@ -196,25 +204,26 @@ img{
 }
 		
 #canard:target ~ .cadre_diapo .interieur_diapo{
-    transform:translatex(0)
+    transform:translatex(0);
 }/*image 1*/
 
 #sanglier:target ~ .cadre_diapo .interieur_diapo{
-    transform:translatex(-25%)
+    transform:translatex(-25%);
 }/*image 2*/
 
 #marcassin:target ~ .cadre_diapo .interieur_diapo{
-    transform:translatex(-50%)
+    transform:translatex(-50%);
 }/*image 3*/
 
 #renard:target ~ .cadre_diapo .interieur_diapo{
-    transform:translatex(-75%)
+    transform:translatex(-75%);
 }/*image 4*/
 
 /*navigation avec images miniatures*/
-.navigation_diapo{	
+.navigation_diapo {	
     display: flex; 
-    /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
+    /*permet d'aligner les photos les unes à la suite des autres,
+    on peut aussi utiliser le positionnement absolu*/
     list-style-type: none;
     margin: 0;	
 }
@@ -223,7 +232,7 @@ img{
 	padding: .25rem;	
 }
 
-.navigation_diapo img{ 
+.navigation_diapo img { 
     max-width: 110px;
     box-shadow:0 0 5px hsla(0,0%,0%,.4);   	
 }
@@ -231,16 +240,25 @@ img{
 @media (min-width:31.25rem){	.description span{			
 	font-size: initial		
 }	
-.body {margin: 0;}
 
-h1 {text-align: center;} 
+/* contact */
+
+#Venir  {
+    height: auto;
+    margin-top: 70px;
+}
+
+#Venir h1 {
+    text-align: center;
+    margin: auto;
+}
 
 .adress {
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .adressT{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', sans-serif;
     text-align: center;
     border-radius: 10px;
     box-shadow: 5px 5px 5px gray;
@@ -248,9 +266,11 @@ h1 {text-align: center;}
     font-size: 40px;
     width: 70%;
     margin: auto;
+    background-color: white;
 }
 
-.map{ flex: 2.7;
+.map { 
+    flex: 2.7;
     height: 550px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px grey;
@@ -258,17 +278,19 @@ h1 {text-align: center;}
     flex-direction: row;
 }
 
-.mapT{
+.mapT {
     width: 100%;
     height: 550px;
-    object-fit: cover;}
+    object-fit: cover;
+}
 
 .containerTrain {    
     height: 20%;
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 50%;
     margin: auto;
+    margin-top: 20px;
 }
 
 .ligne {    
@@ -279,16 +301,20 @@ h1 {text-align: center;}
 }
 
 .train { 
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', sans-serif;
     width: 75%;
     height: 550px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px grey;
     text-align: center;
-    font-size: 29px;
+    font-size: 26px;
+    background-color: white;
 }
 
 .logosncf {
-    margin: 0;
+    margin-top: 30px;
 }
 
+.sncf {
+    border: none;
+}
