@@ -1,11 +1,7 @@
-body {
-    display: flex;
-    justify-content: center;
-}
-
 #devis {
     width: 50%;
     height: auto;
+    margin: auto;
 }
 
 .top {
