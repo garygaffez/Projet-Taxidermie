@@ -3,6 +3,10 @@ body {
     background-color: #B3D2E7;
 }
 
+h1 {
+    font-family: 'Londrina Solid';
+    font-style: oblique;
+}
 #header {
     position: relative;
     text-align: center;
@@ -41,10 +45,11 @@ body {
 
 #presentation {
     text-align: center;
+    margin-top: 50px;
 }
 
 .titlePresentation {
-    font-family: 'Londrina Solid', cursive;
+    font-family: 'Dancing Script', cursive;
     background-color:#94C5CC;
     border-radius: 10px;
     border:solid 1px dimgrey;
@@ -52,20 +57,21 @@ body {
     margin-top: 20px;
     padding: 10px;
     width: 30%;
-    height: 40px;
+    height: 40px;    
     box-shadow:5px 5px 5px gray;
     font-size: x-large;
 }
 
 .photoPresentation  {
     text-align: center ;
-    width: 70%;
+    width: 60%;
     border-radius: 10px;
+    border: 1px solid black;
     box-shadow:5px 5px 5px gray;
 }
 
 .history {
-    width: 85%;
+    width: 70%;
     height: auto;
     font-family: 'Dancing Script', cursive;
     font-size: 20px;
@@ -76,4 +82,58 @@ body {
     box-shadow:5px 5px 5px gray;
     margin: auto;
     margin-top: 20px;
+    padding: 10px;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color: #B3D2E7;
+    margin-top: 30px;
+}
+
+ul {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 30px;
+    background-color: #94C5CC;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+.slogan {
+    width: 70%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.slogan p {
+    text-align: center;
+    margin: 0;
+    line-height: 40px;
+    font-size: 26px;
+    font-style:italic;
+    font-weight: bold;
+    color: grey;
 }
