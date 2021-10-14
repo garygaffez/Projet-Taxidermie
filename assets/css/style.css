@@ -1,41 +1,79 @@
 body {
-     margin: 0;
+    margin: 0;
+    background-color: #B3D2E7;
 }
 
-
 #header {
-     position: relative;
-     text-align: center;
-     white-space: nowrap;
-     height: 260px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    height: 260px;
 }
 
 .ours{
-     width: 100%;
-     opacity: 0.6;
-     height: 260px;
-     border-bottom: 1px solid black;
+    width: 100%;
+    opacity: 0.6;
+    height: 260px;
+    border-bottom: 1px solid black;
 }
 
 .title {
-     position: absolute;
-     top: 50%;
-     left: 30%;
-     transform: translate(-10%, -50%);
-     font-size: 5vw;
-     -webkit-text-stroke: 1px;
-     -webkit-text-stroke-color: white;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-10%, -50%);
+    font-size: 5vw;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 .logo {
-     position: absolute;
-     top:4vw;
-     left: 1vw; 
-     
+    position: absolute;
+    top:4vw;
+    left: 1vw;     
 }
 
 .round {
-     width: 12vw;
-     height: 12vw;
-     border-radius: 1vw;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 1vw;
+}
+
+#presentation {
+    text-align: center;
+}
+
+.titlePresentation {
+    font-family: 'Londrina Solid', cursive;
+    background-color:#94C5CC;
+    border-radius: 10px;
+    border:solid 1px dimgrey;
+    margin: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 30%;
+    height: 40px;
+    box-shadow:5px 5px 5px gray;
+    font-size: x-large;
+}
+
+.photoPresentation  {
+    text-align: center ;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow:5px 5px 5px gray;
+}
+
+.history {
+    width: 85%;
+    height: auto;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border:solid 1px dimgrey;
+    box-shadow:5px 5px 5px gray;
+    margin: auto;
+    margin-top: 20px;
 }
