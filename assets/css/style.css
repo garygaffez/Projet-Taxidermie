@@ -1,1 +1,28 @@
-.body {margin: 0;}
+body {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color: #B3D2E7;
+}
+
+ul {
+    width: 100%;
+    text-align: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    background-color: #94C5CC;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
