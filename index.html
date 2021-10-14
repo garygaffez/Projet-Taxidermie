@@ -28,10 +28,10 @@
     <!-- menu -->
     <nav>
         <ul>
-            <li><a href="#presentation">Présentation</a></li>
-            <li><a href="#realisations">Réalisations</a></li>
-            <li><a href="#Venir">Venir chez nous</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#titre1">Présentation</a></li>
+            <li><a href="#titre2">Réalisations</a></li>
+            <li><a href="#titre3">Venir chez nous</a></li>
+            <li><a href="#titre4">Contact</a></li>
         </ul>
     </nav>
 
@@ -40,8 +40,9 @@
     </div>
 
     <!-- presentation -->
-    <div id="presentation">
-        <h1>Présentation</h1>
+    <div id="titre1"><h1>Présentation</h1></div>
+    <div class="presentation">
+        
         <div><img class="photoPresentation" src="assets/img/artisan.jpg"
                 alt="photo du taxidermiste en train de travailler"></div>
         <div class="history">
@@ -56,8 +57,9 @@
     </div>
 
     <!-- Réalisations -->
-    <div id="realisations">
-        <h1>Réalisations</h1>
+    <div id="titre2"><h1>Réalisations</h1></div>
+    <div class="realisations">
+        
         <span id="canard" class="target">
         </span>
         <span id="sanglier" class="target">
@@ -118,8 +120,8 @@
     </div>
     
     <!-- Coordonnées -->
-    <div id="Venir">
-        <h1>Venir chez nous</h1>   
+    <div id="titre3"><h1>Venir chez nous</h1></div> 
+    <div class="Venir">         
     <div class="adress">
         <div class="adressT">
             <p> Thierry Coupetout Taxidermie</p>
@@ -151,7 +153,39 @@
         </div>
     </div>
     </div>
-    
+
+    <!-- contact -->
+
+    <div id="titre4"><h1>Contact</h1></div>
+
+    <div class="devis">      
+        <div class="top">
+        <h2>Demande de Devis</h2>
+        </div>
+        <form action="devis" method="post">
+        <div>
+        <label for="nom"></label>
+        <input type="text" id="nom" name="nom" placeholder="Nom:" required>
+        </div>
+        <div>
+        <label for="prenom"></label>
+        <input type="prenom" id="prenom" name="prenom" placeholder="Prénom:" required>
+        </div>
+        <div>
+        <label for="tel"></label>
+        <input type="tel" id="tel" name="tel" placeholder="Numéro de tél:" required>
+        </div>
+        <div>
+        <label for="Email"></label>
+        <input type="Email" id="Email" name="Email" placeholder="Email:" required>
+        </div>
+        <div>
+        <label for="message"></label>
+        <textarea id="message" name="message" placeholder="Message:" required></textarea>
+        </div>
+        <div><button class="bouton" type="submit">Envoyer</button></div>
+        </form>
+    </div>
 </body>
 
 </html>
