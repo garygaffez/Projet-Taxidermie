@@ -1,28 +1,16 @@
-.body {margin: 0;}
-.body {margin: 0;}
-
 .footer {
-    height: 110px;
+    height: auto;
     background-color: #A1A6B4;
     font-size: xx-large;
     text-align: center;
+    padding: 10px;
 }
 
-.cgu, .deontologie {
-    background-color: #94C5CC;
-    border-radius: 6px;
-}
-
-.cgu:hover {
-    color : #B4D2E7;
-    font-size: x-large;
-}
-
-.deontologie:hover {
-    color : #B4D2E7;
-    font-size: x-large;
+.legal {
+    font-size: 30px;
 }
 
 .mentions {
-    font-size: 10px;
+    margin: 10px;
+    font-size: 12px;
 }
