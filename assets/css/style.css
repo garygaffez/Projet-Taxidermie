@@ -9,9 +9,6 @@ h1 {
 }
 #header {
     position: relative;
-    text-align: center;
-    white-space: nowrap;
-    height: 260px;
 }
 
 .ours{
@@ -33,8 +30,8 @@ h1 {
 
 .logo {
     position: absolute;
-    top:4vw;
-    left: 1vw;     
+    margin-top: -230px;
+    margin-left: 30px;
 }
 
 .round {
@@ -64,7 +61,7 @@ h1 {
 
 .photoPresentation  {
     text-align: center ;
-    width: 60%;
+    width: 50%;
     border-radius: 10px;
     border: 1px solid black;
     box-shadow:5px 5px 5px gray;
@@ -78,12 +75,17 @@ h1 {
     font-weight: bold;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    border:solid 1px dimgrey;
+    border:solid 1px grey;
     box-shadow:5px 5px 5px gray;
     margin: auto;
     margin-top: 20px;
     padding: 10px;
 }
+
+.history h2, p {
+    margin: 0;
+}
+
 
 nav {
     width: 100%;
@@ -93,14 +95,15 @@ nav {
 }
 
 ul {
-    width: 100%;
+    width: auto;
     text-align: center;
     padding: 0;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 30px;
+    width: 200px;
+    margin: 0 20px;
     background-color: #94C5CC;
     padding: 10px;
     border: 1px solid black;
@@ -137,3 +140,96 @@ nav ul li a:hover {
     font-weight: bold;
     color: grey;
 }
+
+#realisations {
+    width: 60%;
+    margin: auto;
+    margin-top: 60px;   
+}
+
+#realisations h1 {
+    text-align: center;
+}
+
+/* viewer */
+    *{box-sizing:border-box;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/*pour le saut de page, on cree une class que l'on met en display:none*/
+.target{
+    display: none;
+}
+
+/* englobe le slider */
+.cadre_diapo{
+    margin: auto;
+    max-width: 85%;
+    overflow: hidden;	
+}
+
+.interieur_diapo{
+    display: flex;
+    width: 400%;
+    transition: transform .6s ease-in-out;  	
+}
+
+.description{
+    position: relative;
+}
+
+.description span{
+    position: absolute;
+    top: 85%;
+    font-size: 75%;
+    display: flex;
+    padding: .5rem;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background: hsla(0,0%,0%,.55);
+}
+		
+#canard:target ~ .cadre_diapo .interieur_diapo{
+    transform:translatex(0)
+}/*image 1*/
+
+#sanglier:target ~ .cadre_diapo .interieur_diapo{
+    transform:translatex(-25%)
+}/*image 2*/
+
+#marcassin:target ~ .cadre_diapo .interieur_diapo{
+    transform:translatex(-50%)
+}/*image 3*/
+
+#renard:target ~ .cadre_diapo .interieur_diapo{
+    transform:translatex(-75%)
+}/*image 4*/
+
+/*navigation avec images miniatures*/
+.navigation_diapo{	
+    display: flex; 
+    /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
+    list-style-type: none;
+    margin: 0;	
+}
+
+.navigation_diapo li {	
+	padding: .25rem;	
+}
+
+.navigation_diapo img{ 
+    max-width: 110px;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);   	
+}
+		
+@media (min-width:31.25rem){	.description span{			
+	font-size: initial		
+}	
+}
+
