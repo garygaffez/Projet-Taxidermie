@@ -231,5 +231,64 @@ img{
 @media (min-width:31.25rem){	.description span{			
 	font-size: initial		
 }	
+.body {margin: 0;}
+
+h1 {text-align: center;} 
+
+.adress {
+    margin-bottom: 20px;
+}
+
+.adressT{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    border: solid 1px gray;
+    font-size: 40px;
+    width: 70%;
+    margin: auto;
+}
+
+.map{ flex: 2.7;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.mapT{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;}
+
+.containerTrain {    
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+}
+
+.ligne {    
+    flex: 1;
+    height: 550px;
+    display: flex;
+    justify-content: right;
+}
+
+.train { 
+    font-family: 'Dancing Script', cursive;
+    width: 75%;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+    text-align: center;
+    font-size: 29px;
+}
+
+.logosncf {
+    margin: 0;
 }
 
