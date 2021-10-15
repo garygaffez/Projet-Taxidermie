@@ -22,12 +22,17 @@ h1 {
     align-items: center;
     position: fixed;
     right: 30px;
-    bottom: 30px;
+    bottom: 100px;
     cursor: pointer;
 }
 
+/* bouton retour haut de page */
 .icone {
     width: 50px;
+    background-color: #94C5CC;
+}
+.icone:hover {
+    background-color:yellowgreen;
 }
 
 #titre1 {
@@ -296,7 +301,7 @@ img {
 	font-size: initial		
 }	
 
-/* contact */
+/* coordonnées */
 
 .Venir  {
     height: auto;
@@ -373,11 +378,33 @@ img {
 
 /* contact */
 
+.coordonnees{
+    width: 50%;
+    height: auto;
+    margin: 2% auto;
+    border-radius: 10px;
+    padding: 0 30px 0 30px;
+    background: #ffffff;
+    box-shadow: 5px 5px 5px gray;
+    border: 1px solid black;
+    font-size: 20px;  
+    font-family: 'Dancing Script', cursive;
+}
+
+.coordonnees p {
+    margin: 0;
+}
+
+.logoFb {
+    width: 30px;
+    border: none;
+}
+
 .devis {
     width: 50%;
     height: auto;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
     border-radius: 10px;
     padding: 0 30px 0 30px;
@@ -389,6 +416,7 @@ img {
 .top {
     width: 100%;
     text-align: center;
+    margin-top: 20px;
 }
 
 form div {
